@@ -51,6 +51,18 @@
            padding: 3em;
        }
 
+       .learnSteps{
+               width: 100%;
+               align-content: center;
+               padding: 1em;
+               
+           }
+
+           h1{
+               padding: .5em;
+               margin-left: 30%;
+           }
+
        #login, #save{
            background-color: var(--clr-accent2);
 
@@ -79,7 +91,10 @@
                padding: 1em;
                
            }
-
+          
+           .learnWrapper{
+               
+           }
 
        }
 
@@ -87,14 +102,14 @@
 </head>
 <body>
     <header>
-       
+     
             <div class="menu">
                 <img src="./Assets/Black & Yellow Museum Logo.png" alt="logo" class="logo">
                 <ul>
-                    <li>Our Story</li>
-                    <li>Learn</li>
-                    <li>Create</li>
-                    <li>Team</li>
+                    <li><a href="#story">Our Story</a></li> 
+                    <li><a href="Learn.html" target="_blank">Learn</a></li>
+                    <li><a href="#solutions">Create</a></li>
+                    <li><a href="#team">Team</a></li>
                    
                 </ul>
             </div>
@@ -104,7 +119,7 @@
                     <h2>How To</h2>
                     <h2>Start Your Own Journal</h2>
                 </div>
-                <video id="mainVid" width="400" height="300" controls autoplay>
+                <video id="mainVid" width="400" height="245" controls autoplay>
                     <source src="./Assets/My Movie.mp4" type=video/mp4>
                 </video>
                 
@@ -115,6 +130,7 @@
     </header>
 
     <section class="UserJourney">
+       <h1>How to Start A Bullet Journal</h1>
       <div class="learnGrid">
         <div class="learnSteps" id="login">
             <h3 class="learnTitle">1.Log In</h3>
