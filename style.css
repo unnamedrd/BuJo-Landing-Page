@@ -28,6 +28,7 @@
     --fs-h2: 2rem;
     --fs-h3: 1.5rem;
     --fs-p: 1rem;
+    --fs-li:1.5rem;
 
 }
 
@@ -37,12 +38,15 @@
         --fs-h2:2rem;
         --fs-h3: 1.5rem;
         --fs-p: 1.25;
+        --fs-li:1.5rem;
     }
 }
 
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
+    top:0;
+    left:0;
     margin:0;
     padding: 0; 
     font-family: var(--ff--primary);
@@ -62,13 +66,15 @@ header{
 
 bodysection{
     width:100vw;
-    padding: 3rem;
+    margin: 0;
     
 }
 
 .storyContainer, .solutionsWrapper, .startWrapper, .featureWrapper, .teamWrapper{
-    margin: 3em;
-    padding: 2em;
+    margin: 0em;
+    margin-left: 0;
+    margin-top: 2em;
+   /* padding: 2em;*/
 }
 
 /*Hero Section*/
@@ -105,6 +111,8 @@ header h2{
     padding: 1em;
     list-style: none;
     color:var(--clr-light);
+    font-size: var(--fs-li);
+    
 
 }
 .menu a:hover{
@@ -132,32 +140,107 @@ header h2{
     font-size: 5rem;
 }
 
+.headerBtn{
+    background-color: var(--clr-accent4);
+    width: 9em;
+    height: 4em;
+    border-radius: 10px;
+    border: .2em solid var(--clr-light);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color:var(--clr-light);
+    font-size: 1em;
+}
 
+@media only screen and (min-width:600px){
+    .heroWrapper{
+        width: 100vw;
+        margin-top: 3em;
+        display: flex;
+        flex-direction: row;
+    }
+    .heroTxt{
+        float: right;
+    }
+
+    #mainImg{
+        float:right;
+        justify-content: flex-end;
+    }
+}
+
+
+/*story*/
+.storyContainer{
+    padding: 3em;
+}
+
+@media only screen and (min-width:600px){
+
+    .storyContainer{
+        height: 50vh;
+        margin-left: 3em;
+        
+    }
+
+
+}
 /*Facts - organize*/
 
 #solutions{
     background-color: var(--clr-accent3);
     display: flex;
+  
 }
 .factsWrapper{
-    display: flex;
-    flex-direction: row;
+    /*padding:3em ;*/
     width: 100vw;
     justify-content: space-evenly;
 }
 
 .facts{
 
-    margin:1em ;
+    margin:3em ;
 }
 
 .facts p{
-    width: 12rem;
+    width: 90%;
 }
 
 .factsWrapper h3{
     color: var(--clr-accent2);
 }
+
+@media only screen and (min-width:600px){
+
+    #solutionsTitle{
+        margin-left: 3em;
+        color: var(--clr-accent2)
+    }
+    .solutionsWrapper{
+        margin: 1%;
+        width: 100vw;
+        height: 50vh;;
+    }
+
+    .factsWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80%;
+        margin-bottom: 3em;
+       
+       
+    }
+
+    .facts{
+        width: 30%;
+        padding: 1em;
+        margin: 1%;
+        text-align: center;
+    }
+}  
+
+ 
 /*features section*/
 
 #features{
@@ -169,8 +252,8 @@ header h2{
 }
 
 .featImg{
-    width: 33.33%;
-    height: 12rem;
+   width: 33.3%;
+  
 }
 
 /*Create section - link to demo*/
@@ -179,23 +262,77 @@ header h2{
  
 }
 
+.startWrapper{
+    text-align: center;
+    padding: 3em;
+    
+}
+
+
+@media only screen and (min-width:600px){
+    .startWrapper{
+        text-align: center;
+        padding: 3em;
+        
+    }
+}
+
 /*team section*/
 
 #team{
     background-color: var(--clr-accent4);
-    display: grid;
-    grid-template: 1fr 1fr 1fr;
+    padding: 2em;
+    text-align: center;
+    
+   
+}
+.teamTitle{
+    justify-content: center;
 }
 
-.teamMember{
-    width: 30% ; 
+.startBtn{
+    background-color: var(--clr-accent1);
+    width: 9em;
+    height: 4em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color:var(--clr-light);
 }
 
+
+@media only screen and (min-width:600px){
+
+    #team{
+        padding: 3em;
+    }
+    .teamWrapper {
+        margin: 3em;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .teamMember{
+        width: 30%;
+        background-color: var(--clr-accent1);
+        padding: 1em;
+        margin: 1%;
+        text-align: center;
+    }
+}   
+
+
+
+ 
 footer{
     width: 100vw;
     background-color: var(--clr-accent4);
     display: flex;
     text-align: center;
     vertical-align: middle;
+    top: 0;
+    left: 0;
     
 }
