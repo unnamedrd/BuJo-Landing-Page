@@ -5,10 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn-BuJo Tutorial</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+    :root{
+    --ff--primary: 'Poppins';
+    --ff--secondary: 'Aleo';
+
+    --fw-light: 100;
+    --fw-regular: 300;
+    --fw-medium: 500
+    --fw-bold: 700;
+    --fw-verybold: 800;
+
+    --clr-light:#ffff;  
+    --clr-dark: #5D576B;
+    --clr-accent1:#17A398;  
+    --clr-accent2: #FFDD4A;
+    --clr-accent3: #EF5DA8;
+    --clr-accent4: #F3DFC1;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-p: 1rem;
+    --fs-li:1.5rem;
+
+}
+       #mainVid{
+           border: .5em solid var(--clr-light);
+           margin-right: 20%;
+           margin-top: 10%;
+           text-align: left;
+          position: absolute;
+       }
+       
+       .learnWrapper{
+           display: flex;
+           flex-direction: row;
+           top: 0;
+           left:0;
+           right: 0;
+       }
+       .learnGrid{
+           padding: 3em;
+       }
+
+       #login, #save{
+           background-color: var(--clr-accent2);
+
+       }
+        #homePg, #canvas { 
+            background-color: var(--clr-accent3);
+
+        }
+        #journal,#design{
+            background-color: var(--clr-accent1);
+
+        }
+
+
+
+       @media only screen and (min-width:600px){
+           .learnGrid{
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               grid-gap: 1em;
+           }
+
+           .learnSteps{
+               width: 100%;
+               align-content: center;
+               padding: 1em;
+               
+           }
+
+
+       }
+
+    </style>
 </head>
 <body>
     <header>
-        <div class="heroWrapper">
+       
             <div class="menu">
                 <img src="./Assets/Black & Yellow Museum Logo.png" alt="logo" class="logo">
                 <ul>
@@ -19,14 +98,13 @@
                    
                 </ul>
             </div>
-            <div class="heroWrapper">
+            <div class="learnWrapper">
            
-                <div class="heroTxt">
-                    <h1>BUJO</h1>
-                    <h2>Art + Organization</h2>
-                     <button class="headerBtn">Get Started</button>
+                <div class="learnHeroTxt">
+                    <h2>How To</h2>
+                    <h2>Start Your Own Journal</h2>
                 </div>
-                <video width="400" height="300" controls autoplay>
+                <video id="mainVid" width="400" height="300" controls autoplay>
                     <source src="./Assets/My Movie.mp4" type=video/mp4>
                 </video>
                 
@@ -37,6 +115,34 @@
     </header>
 
     <section class="UserJourney">
+      <div class="learnGrid">
+        <div class="learnSteps" id="login">
+            <h3 class="learnTitle">1.Log In</h3>
+            <p class="learnTxt">Create an account or log in if you already have one.</p>
+        </div>
+        <div class="learnSteps" id="homePg">
+            <h3 class="learnTitle" >2.Home Page</h3>
+            <p class="learnTxt">Log in takes you to the home page where the library of all your previous journals are kept</p>
+        </div>
+        <div class="learnSteps" id="journal">
+            <h3 class="learnTitle" >3.Journal</h3>
+            <p class="learnTxt">Click the Add New Journal Button at the top of the home page to start a new journal</p>
+        </div>
+        <div class="learnSteps" id="canvas">
+            <h3 class="learnTitle" >4.Canvas</h3>
+            <p class="learnTxt">Once in the canvas use the pen tools to start drawing. </p>
+        </div>
+        <div class="learnSteps" id="design">
+            <h3 class="learnTitle">5.Design</h3>
+            <p class="learnTxt">Use the template button to populate a template to start on or create your own from scratch</p>
+        </div>
+        <div class="learnSteps" id="save">
+            <h3 class="learnTitle">6.Save</h3>
+            <p class="learnTxt">Once you're done, click the save button to save your journal. The exit button takes you back to the home page</p>
+        </div>
+
+      </div>
+    
 
     </section>
 </body>

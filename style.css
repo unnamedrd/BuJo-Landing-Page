@@ -104,7 +104,7 @@ header h2{
 
 .menu ul{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     padding: 0;
     
 }
@@ -159,14 +159,14 @@ header h2{
         margin-top: 3em;
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
     }
-    .heroTxt{
-        float: right;
-    }
+   
 
     #mainImg{
-        float:right;
-        justify-content: flex-end;
+        margin-right: 20%;
+        margin-top: 10%;
+        justify-self: end;
     }
 
     .logo{
@@ -174,18 +174,19 @@ header h2{
         margin: .1em;
 
     }
-    .menu{
-       
-    }
+  
     .menu li, a{
-        padding: .2em;
-        list-style: none;
+        padding: .2em; 
         color:var(--clr-light);
         font-size: var(--fs-h3);
         text-decoration: none;
     }
     .menu ul{
         width: 90%;
+        list-style: none;
+        float: right;
+
+       
     }
 }
 
