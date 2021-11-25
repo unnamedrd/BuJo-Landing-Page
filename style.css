@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=B612&family=BioRhyme:wght@200;300;400&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --ff--primary: 'Poppins';
+    --ff--secondary: 'Aleo';
+
+    --fw-light: 100;
+    --fw-regular: 300;
+    --fw-medium: 500
+    --fw-bold: 700;
+    --fw-verybold: 800;
+
+    --clr-light:#ffff;  
+    --clr-dark: #5D576B;
+    --clr-accent1:#17A398;  
+    --clr-accent2: #FFDD4A;
+    --clr-accent3: #EF5DA8;
+    --clr-accent4: #F3DFC1;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-p: 1rem;
+
+}
+
+@media (min-width:800px){
+    :root {
+        --fs-h1:4.5rem;
+        --fs-h2:2rem;
+        --fs-h3: 1.5rem;
+        --fs-p: 1.25;
+    }
+}
+
+body{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin:0;
+    padding: 0; 
+    font-family: var(--ff--primary);
+    line-height: 1.6;
+    width: 100vw;
+}
+
+header{
+   
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--clr-accent4);
+    height: 100vh;
+
+}
+
+
+bodysection{
+    width:100vw;
+    padding: 3rem;
+    
+}
+
+.storyContainer, .solutionsWrapper, .startWrapper, .featureWrapper, .teamWrapper{
+    margin: 3em;
+    padding: 2em;
+}
+
+/*Hero Section*/
+
+
+header h1{
+    color: var(--clr-accent1);
+    font-weight: var(--fw-verybold);
+}
+
+header h2{
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    
+}
+
+.menu{
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100vh;
+    background-color: var(--clr-accent4);
+}
+
+.menu ul{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.menu li, a{
+    padding: 1em;
+    list-style: none;
+    color:var(--clr-light);
+
+}
+.menu a:hover{
+    color:var(--clr-accent3)
+}
+
+.logo{
+    height: 8rem;
+}
+
+#story{
+    background-color: var(--clr-light);
+}
+
+.heroTxt{
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+.heroTxt h1{
+    font-size: 5rem;
+}
+
+
+/*Facts - organize*/
+
+#solutions{
+    background-color: var(--clr-accent3);
+    display: flex;
+}
+.factsWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.facts{
+
+    margin:1em ;
+}
+
+.facts p{
+    width: 12rem;
+}
+
+.factsWrapper h3{
+    color: var(--clr-accent2);
+}
+/*features section*/
+
+#features{
+    background-color: var(--clr-light);
+    display: flex;
+}
+#features>div{
+    padding: 15%;
+}
+
+.featImg{
+    width: 33.33%;
+    height: 12rem;
+}
+
+/*Create section - link to demo*/
+#create{
+    background-color: var(--clr-accent2);
+ 
+}
+
+/*team section*/
+
+#team{
+    background-color: var(--clr-accent4);
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+}
+
+.teamMember{
+    width: 30% ; 
+}
+
+footer{
+    width: 100vw;
+    background-color: var(--clr-accent4);
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    
+}
