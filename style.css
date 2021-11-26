@@ -153,6 +153,11 @@ header h2{
     font-size: 1em;
 }
 
+.floatMenu{
+    width: 100vh;
+    float: right;
+}
+
 @media only screen and (min-width:600px){
     .heroWrapper{
         width: 100vw;
@@ -267,21 +272,58 @@ header h2{
  
 /*features section*/
 
-#features{
+.featureGrid
+
+.feature{
     background-color: var(--clr-light);
-    display: flex;
-}
-#features>div{
-    padding: 15%;
+    display: table;
+    table-layout: fixed;
+    align-items: center;
 }
 
-.featImg{
-   width: 33.3%;
-  
+
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse; 
+  }
+
+  .feature:nth-child(even) {
+    float: right;
+  }
+
+ .featureTxt,.featureImg{
+     display: table-cell;
+     direction: ltr;
+    
+  }
+  .featureTxt{
+    vertical-align: middle;
+    text-align: left;
+    width: 40%;
+  }
+
+  .featureGrid img{
+      vertical-align: top;
+  }
+
+#features>div{
+    padding: 10%;
 }
+
+
+
+/*
 .featureTxt{
     width: 66.66%;
 }
+:nth-child(odd) div.featureTxt{
+    float: right;
+}
+
+
+*/
+
+
 
 /*Create section - link to demo*/
 #create{
