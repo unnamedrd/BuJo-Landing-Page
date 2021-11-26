@@ -42,7 +42,7 @@
        
        .learnWrapper{
            display: flex;
-           flex-direction: row;
+           flex-direction: column;
            top: 0;
            left:0;
            right: 0;
@@ -58,9 +58,9 @@
                
            }
 
-           h1{
+           h1, h2{
                padding: .5em;
-               margin-left: 30%;
+               
            }
 
        #login, #save{
@@ -75,7 +75,9 @@
             background-color: var(--clr-accent1);
 
         }
-
+        .learnGridTitle{
+            margin-left: 3em;
+        }
 
 
        @media only screen and (min-width:600px){
@@ -91,9 +93,41 @@
                padding: 1em;
                
            }
+
+          .learnWrapper{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           align-content: space-between;
+           top: 0;
+           left:0;
+           right: 0;
+           margin-top: 5rem;
+           padding: 3rem;
+       }
           
-           .learnWrapper{
+           video{
                
+               float: right;
+               
+           }
+
+           h1{
+               font-size: 5em;
+               padding: .1em;
+           }
+           h2{
+               font-size: 2em;
+               
+           }
+
+           learnHeroTxt{
+               line-height: 1;
+               padding: 0;
+           }
+
+           #mainVid{
+               width: 600;
+               height: 360;
            }
 
        }
@@ -116,12 +150,15 @@
             <div class="learnWrapper">
            
                 <div class="learnHeroTxt">
-                    <h2>How To</h2>
-                    <h2>Start Your Own Journal</h2>
+                    <h1>CREATE + ORGANIZE</h1>
+                    <h2>Bujo Canvas Tutorial</h2>
                 </div>
-                <video id="mainVid" width="400" height="245" controls autoplay>
-                    <source src="./Assets/My Movie.mp4" type=video/mp4>
-                </video>
+                <div class="video">
+                    <video id="mainVid" width="400" height="245" controls autoplay>
+                        <source src="./Assets/My Movie.mp4" type=video/mp4>
+                    </video>
+                </div>
+               
                 
             </div>
             
@@ -130,7 +167,7 @@
     </header>
 
     <section class="UserJourney">
-       <h1>How to Start A Bullet Journal</h1>
+       <h1 class="learnGridTitle">How to Start A Bullet Journal</h1>
       <div class="learnGrid">
         <div class="learnSteps" id="login">
             <h3 class="learnTitle">1.Log In</h3>
