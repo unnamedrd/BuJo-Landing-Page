@@ -1,14 +1,16 @@
-# BuJo-Landing-Page
-# BuJo Product Landing page for MintBean Hackathon Submission
+![Black   Yellow Museum Logo](https://user-images.githubusercontent.com/93551062/146459256-54cdbaed-71ad-4154-8533-a7f85174b230.png)
 
-# Overview: BuJo, short for Bullet Journal, is a team hackathon submission for the MintBean Hackathon Winter 2021. 
+## BuJo Product Landing page for MintBean Hackathon Submission
+
+## Overview: BuJo, short for Bullet Journal, is a team hackathon submission for the MintBean Hackathon Winter 2021. 
 
 Our teams mission was to create a product that allowed users to express thier visual creativity. 
 
-Find Links to the deployed product here and live site here. 
+Find Links to the deployed product here and live site here. https://bu-jo.herokuapp.com/login
 
 
 See a short demo of our product here. https://unnamedrd.github.io/BuJo-Landing-Page/Learn.html
+
 
 
 
@@ -20,6 +22,11 @@ Project Timeline. Insert here
 
 
 ## First Step: Define the problem and settle on a solution:
+
+BuJo Problem Statement: The bullet journal method was created by designer Rydell Carroll.Bullet Journals can be a fun, personal organization tool. The problem is they require maintenance and consistency. A lot of time, materials and especially skill goes into making even simple bullet journal layouts and that can be discouraging, especially for a beginner. 
+
+So our team set out to create the BuJo application to turn the OG bullet journal method into a fun, digital experience. We wanted to make design accessible for non designers, giving them a place to practice their creative skills.  As an added bonus, making a more sustainable, less expensive alternative to the traditional method. 
+
 
 **MVP Features**
 Requirements of the Contest 
