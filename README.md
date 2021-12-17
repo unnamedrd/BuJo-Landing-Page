@@ -32,15 +32,15 @@ So our team set out to create the BuJo application to turn the OG bullet journal
 Requirements of the Contest 
 
 Full Stack Requirements
-1.Drag mouse across screen to make free form lines (in color)
-2.Click on an area to fill with color
-3.Save Files 
+-1.Drag mouse across screen to make free form lines (in color)
+-2.Click on an area to fill with color
+-3.Save Files 
 
 To Build - Minimum
-4.Canvas using Canvas API 
-5. BuJo Templates
-6. Color Picker 
-7. Pen Tool 
+-4.Canvas using Canvas API 
+-5. BuJo Templates
+-6. Color Picker 
+- 7. Pen Tool 
 
 Extra Features 
 8.Typing Tool 
@@ -75,10 +75,13 @@ Netlify - Deployment
 
 ## Acknowledgements 
 
-Collaborators: 
 
-Naj N, Front-end Developer @unamedrd
-Miguel Martinez, Full-stack Developer @miguelkristian17
-Dave Novac, UI/UX Designer @davenovac
+| Name | Role| Email |
+| --- | --- | --- |
+ |Naj N | Front-end Developer| @unamedrd|
+| Miguel Martinez | Full-stack Developer | @miguelkristian17 |
+| Dave Novac | UI/UX Designer | @davenovac|
+
+
 
 
