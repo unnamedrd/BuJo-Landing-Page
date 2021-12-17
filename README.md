@@ -13,12 +13,6 @@ Find Links to the deployed product here and live site here. https://bu-jo.heroku
 See a short demo of our product here. https://unnamedrd.github.io/BuJo-Landing-Page/Learn.html
 
 
-
-https://user-images.githubusercontent.com/93551062/146469186-d4005466-9625-4c91-8e1f-d1a1532aa319.MOV
-
-
-
-
 Product Management
 
 Our team had a tight timeline (7 days) to design, develop, build and deploy this product. We needed a detailed plan to ensure an MVP would be completed by the submission due date. We also outlined a schedule for daily standups, communication channels to flag problems during development and a central repository where all documentation resided. 
@@ -41,15 +35,18 @@ We decided on building out the following features for an MVP. There were a few f
 Requirements of the Contest 
 
 Full Stack Requirements
--1.Drag mouse across screen to make free form lines (in color)
--2.Click on an area to fill with color
--3.Save Files 
 
-To Build - Minimum
--4.Canvas using Canvas API 
--5. BuJo Templates
--6. Color Picker 
--7. Pen Tool 
+1.Drag mouse across screen to make free form lines (in color)
+2.Click on an area to fill with color
+3.Save Files 
+
+To Build
+
+Minimum:
+4.Canvas using Canvas API 
+5. BuJo Templates
+6. Color Picker 
+7. Pen Tool 
 
 Extra Features: 
 8.Typing Tool 
@@ -66,6 +63,22 @@ Fortunately, our team included a designer. Once we outlined what the hackathon r
 
 
 ![DCEE1267-B7A3-44DA-8D81-E8BC2DF2686A_4_5005_c](https://user-images.githubusercontent.com/93551062/146467504-f8fc546d-ff70-4b4e-8ad3-4442fe00cbbf.jpeg)
+
+*User Journey*
+- User logs in 
+- Homepage of saved journals
+- Add Button to create new template
+- New Template page
+- A user can click a new entry button
+        -*Clicking the button clears the canvas 
+        -*Prompts the user if they want to save 
+- A user can click on the pen tool to start drawing their layout 
+- A user can click on a dropdown / or button to select a template
+- Clicking the template button displays choices for templates
+- A user can select the template they want to insert into the canvas
+- A user can color in the template using the color picker and pen tools
+- A user can hit the save button once completed 
+
 
 ## Build & Deploy
 
@@ -92,9 +105,9 @@ Collaborators
 
 | Name | Role| Email |
 | --- | --- | --- |
- |Naj N | Front-end Developer| @unamedrd|
-| Miguel Martinez | Full-stack Developer | @miguelkristian17 |
-| Dave Novac | UI/UX Designer | @davenovac|
+ |Naj N | Front-end Developer| unamedrd@gmail|
+| Miguel Martinez | Full-stack Developer | miguelkristian17@gmail |
+| Dave Novac | UI/UX Designer | davenovac@gmail|
 
 
 
