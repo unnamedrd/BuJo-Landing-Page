@@ -8,9 +8,15 @@
 Our teams mission was to create a product that allowed users to express thier visual creativity. 
 
 Find Links to the deployed product here and live site here. https://bu-jo.herokuapp.com/login
-
+Instructions for use: 
+Use the following test profile login information to log into the application
+Email: test@email.com
+Password: asdfasdf
 
 See a short demo of our product here. https://unnamedrd.github.io/BuJo-Landing-Page/Learn.html
+
+
+
 
 
 Product Management
