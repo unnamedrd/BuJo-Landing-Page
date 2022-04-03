@@ -87,7 +87,7 @@ header h1{
 }
 
 header h2{
-    color: var(--clr-light);
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
     
 }
@@ -107,13 +107,18 @@ header h2{
     display:flex;
     justify-content: space-evenly;
     padding: 0;
+   
     
 }
+.floatMenu ul li{
+    color:var(--clr-dark)
+}
+
 
 .menu li, a{
     padding: .2em;
     list-style: none;
-    color:var(--clr-light);
+    color:var(--clr-dark);
     font-size: var(--fs-p);
     text-decoration: none;
 }
@@ -147,9 +152,9 @@ header h2{
     width: 9em;
     height: 4em;
     border-radius: 10px;
-    border: .2em solid var(--clr-light);
+    border: .2em solid var(--clr-dark);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    color:var(--clr-light);
+    color:var(--clr-dark);
     font-size: 1em;
 }
 
