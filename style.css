@@ -208,6 +208,12 @@ header h2{
 /*story*/
 .storyContainer{
     padding: 3em;
+    
+}
+
+.storyContainer p{
+    width: 60%;
+
 }
 
 @media only screen and (min-width:600px){
