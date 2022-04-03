@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=B612&family=BioRhyme:wght@200;300;400&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&family=Raleway:wght@100;200;300&display=swap');
+
 *, 
 *::before, 
 *::after{
@@ -8,7 +10,7 @@
 
 :root{
     --ff--primary: 'Poppins';
-    --ff--secondary: 'Aleo';
+    --ff--secondary: 'Raleway';
 
     --fw-light: 100;
     --fw-regular: 300;
@@ -52,6 +54,11 @@ body{
     font-family: var(--ff--primary);
     line-height: 1.6;
     width: 100vw;
+}
+
+body p{
+    font-family: var(--ff--secondary);
+    font-weight: 400;
 }
 
 header{
@@ -252,7 +259,8 @@ header h2{
 }
 
 .facts p{
-    width: 90%;
+    width: 80%;
+    color:var(--clr-accent4)
 }
 
 .factsWrapper h3{
